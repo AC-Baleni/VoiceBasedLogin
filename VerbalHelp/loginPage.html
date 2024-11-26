@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/loginPageStyle.css">
+    <title>Verbal Help</title>
+</head>
+<body>
+    <main class="main">
+        <div class="login-container">
+            <h2>Voice-Based Login</h2>
+            <form id="login-form">
+              <div class="input-group">
+                <label for="username">Username</label>
+                <div class="input-field">
+                  <input type="text" id="username" name="username" placeholder="Enter your username" required />
+                  <i class="fas fa-user"></i>
+                </div>
+              </div>
+              <div class="input-group">
+                <label for="password">Password</label>
+                <div class="input-field">
+                  <input type="password" id="password" name="password" placeholder="Enter your password" required />
+                  <i class="fas fa-lock"></i>
+                </div>
+              </div>
+              <div class="input-group">
+                <label for="voice-command">Voice Command</label>
+                <div class="input-field">
+                  <input type="text" id="voice-command" name="voice-command" placeholder="Click the microphone to speak" readonly />
+                  <button type="button" id="mic-button" class="mic-button">
+                    <i class="fas fa-microphone"></i>
+                  </button>
+                </div>
+              </div>
+              <button type="submit" id="submit-btn">Login</button>
+            </form>
+          </div>
+          
+          <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+          <script src="./js/loginPageScript.js"></script>
+    </main>
+    
+</body>
+</html>
